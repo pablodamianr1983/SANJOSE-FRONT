@@ -1,0 +1,94 @@
+/* Estilos para la foto de perfil */
+.profile-photo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-photo img {
+  max-width: 100px;  /* Tamaño pequeño */
+  height: 100px;     /* Mantener la altura igual que el ancho */
+  border-radius: 50%; /* Hacer la imagen circular */
+  object-fit: cover;  /* Asegurarse de que la imagen cubra el área sin distorsionarse */
+}
+
+/* Otros estilos existentes */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* Estilos para la tabla de perfil */
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.profile-table th,
+.profile-table td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-table th {
+  width: 30%;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-table td {
+  width: 70%;
+  color: #555;
+}
+
+.profile-table tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
+/* Estilos para los botones */
+button {
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+

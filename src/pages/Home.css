@@ -1,0 +1,136 @@
+/* Estilos generales de contenedor para centrar el contenido */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/folder-4119674_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/* Estilo moderno para la tarjeta de bienvenida */
+.welcome-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+  color: #000; /* Color de texto negro para la tarjeta */
+  text-align: center; /* Centrar texto horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Efecto de elevación en hover */
+.welcome-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.home-title {
+  font-size: 2.5rem;
+  color: #000; /* Color de texto negro */
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+  text-align: center; /* Centrar texto horizontalmente */
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #333; /* Color de texto negro */
+  text-align: center; /* Centrar texto horizontalmente */
+}
+
+/* Contenedor del formulario de login y mensaje de autenticación */
+.login-container,
+.authenticated-message {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 0.5s ease-in-out;
+  color: #000; /* Color de texto negro para contenedores de login y mensaje de autenticación */
+  text-align: center; /* Centrar texto horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title, .authenticated-title {
+  font-size: 1.5rem;
+  color: #000; /* Color de texto negro */
+  font-weight: 700;
+  text-align: center; /* Centrar texto horizontalmente */
+}
+
+.authenticated-subtitle, .home-subtitle {
+  font-size: 1rem;
+  color: #333; /* Color de texto negro */
+  text-align: center; /* Centrar texto horizontalmente */
+}
+
+/* Estilos para botones */
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto de presión en el botón */
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

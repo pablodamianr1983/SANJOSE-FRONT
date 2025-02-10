@@ -1,0 +1,367 @@
+/* dark-theme.css */
+
+/* Reset y configuración base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Fondo oscuro */
+  color: #e0e0e0;           /* Texto claro */
+  line-height: 1.6;
+}
+
+/* Enlaces */
+a {
+  color: #82aaff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a6c8ff;
+}
+
+/* Navbar */
+nav {
+  background-color: #1f1f1f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+nav button {
+  background-color: #e53935;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #c62828;
+}
+
+/* Contenedor principal */
+main {
+  padding: 2rem;
+}
+
+/* Formularios */
+form {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #82aaff;
+}
+
+/* Estilos para inputs de tipo text (aplicables también a campos fuera de .form-group, por ejemplo, el buscador) */
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+input[type="text"]:focus {
+  border-color: #82aaff;
+}
+
+/* Botones generales */
+button {
+  background-color: #4caf50;
+  border: none;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #43a047;
+  transform: scale(1.02);
+}
+
+/* Botones secundarios (por ejemplo, cancelar) */
+button[type="button"] {
+  background-color: #757575;
+}
+
+button[type="button"]:hover {
+  background-color: #616161;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table thead {
+  background-color: #333333;
+}
+
+table th,
+table td {
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
+
+table tr:hover {
+  background-color: #2a2a2a;
+}
+
+table td:last-child,
+table th:last-child {
+  text-align: center;
+}
+
+/* Estilos para tarjetas y contenedores (por ejemplo, en Home) */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.welcome-card {
+  background-color: #1e1e1e;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+}
+
+.welcome-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+/* Contenedores de login y mensajes */
+.login-container,
+.authenticated-message {
+  color: #ffffff;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.login-title,
+.authenticated-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.authenticated-subtitle,
+.home-subtitle {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+/* Tarjetas de perfil y secciones */
+.profile-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #444;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.profile-table th,
+.profile-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #444;
+}
+
+.profile-table th {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+.profile-table td {
+  color: #cccccc;
+}
+
+/* Mensajes y conversaciones */
+.conversacion-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.mensajes-lista {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+}
+
+.mensaje {
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.mensaje-propio {
+  background-color: #4caf50;
+  text-align: right;
+  color: #ffffff;
+}
+
+.mensaje-otro {
+  background-color: #555;
+  text-align: left;
+  color: #ffffff;
+}
+
+.mensaje span {
+  display: block;
+  font-size: 0.8rem;
+  color: #bbbbbb;
+}
+
+/* Pestañas (tabs) */
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active,
+.tabs button:hover {
+  background-color: #444;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

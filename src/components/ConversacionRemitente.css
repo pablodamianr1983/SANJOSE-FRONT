@@ -1,0 +1,41 @@
+.mensajes-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .mensaje {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    color: #020202;
+  }
+  
+  .mensaje-propio {
+    text-align: right;
+    background-color: #4caf50; /* Verde para el usuario actual */
+  }
+  
+  .mensaje-remitente-1 {
+    text-align: left;
+    background-color: #2196f3; /* Azul para el remitente 1 */
+  }
+  
+  .mensaje-remitente-2 {
+    text-align: left;
+    background-color: #ff9800; /* Naranja para el remitente 2 */
+  }
+  
+  .mensaje-remitente-3 {
+    text-align: left;
+    background-color: #9c27b0; /* Morado para el remitente 3 */
+  }
+  
+  .mensaje-fecha {
+    font-size: 0.8em;
+    color: #0c0c0c;
+  }
+  
