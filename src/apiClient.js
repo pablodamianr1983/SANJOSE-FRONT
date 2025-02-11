@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: process.env.VITE_API_URL || 'http://localhost:3000', // ✅ Usa la URL del backend en producción
+  baseURL: process.env.VITE_API_URL || 'https://sanjose-back-production.up.railway.app', // ✅ Usa la URL del backend en producción
   withCredentials: true
 });
 
