@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://tu-backend.railway.app',  // URL de tu API
+        target: 'sanjose-back-production.up.railway.app',  // URL de tu API
         changeOrigin: true,  // Cambia el origen de la solicitud al destino
         secure: false       // Permite conexiones no seguras (HTTP)
       }
