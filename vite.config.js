@@ -1,15 +1,17 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  define: {
+    'process.env.VITE_API_URL': JSON.stringify('https://sanjose-back-production.up.railway.app')
+  },
   server: {
     proxy: {
       '/api': {
-        target: 'sanjose-back-production.up.railway.app',  // URL de tu API
-        changeOrigin: true,  // Cambia el origen de la solicitud al destino
-        secure: false       // Permite conexiones no seguras (HTTP)
+        target: 'https://sanjose-back-production.up.railway.app', // ✅ Asegúrate de incluir HTTPS
+        changeOrigin: true,
+        secure: true
       }
     }
   }
