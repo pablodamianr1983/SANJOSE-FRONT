@@ -1,8 +1,9 @@
 // apiClient.js
 import axios from 'axios';
 
-const apiClient = axios.create({
-  baseURL: 'sanjose-back-production.up.railway.app', // Asegúrate de que esta URL sea correcta
+const API = axios.create({
+  baseURL: process.env.VITE_API_URL || 'http://localhost:3000', // ✅ Usa la URL del backend en producción
+  withCredentials: true
 });
 
 // Interceptor para agregar el token a las solicitudes
