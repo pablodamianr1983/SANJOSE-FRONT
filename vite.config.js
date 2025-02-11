@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   define: {
-    'process.env.VITE_API_URL': JSON.stringify('https://sanjose-back-production.up.railway.app')
-  },
+  'import.meta.env.VITE_API_URL': JSON.stringify('https://sanjose-back-production.up.railway.app')
+}
   server: {
     proxy: {
       '/api': {
