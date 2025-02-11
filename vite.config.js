@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   define: {
   'import.meta.env.VITE_API_URL': JSON.stringify('https://sanjose-back-production.up.railway.app')
-}
+},
   server: {
     proxy: {
       '/api': {
