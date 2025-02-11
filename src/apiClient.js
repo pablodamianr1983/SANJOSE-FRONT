@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3000', // Asegúrate de que esta URL sea correcta
+  baseURL: 'https://tu-backend.railway.app', // Asegúrate de que esta URL sea correcta
 });
 
 // Interceptor para agregar el token a las solicitudes
